@@ -1,0 +1,368 @@
+
+ :root{
+
+    --morado:rgba(106, 12, 156, 0.805);
+    --verde:rgba(17, 111, 27, 0.805);
+    --grisClaro:rgb(239, 234, 234);
+    --grisOscuro:rgb(90, 90, 90);
+    --fuente:verdana;
+
+} 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+}
+
+.clearFix{
+    float: none;
+    clear: both;  /* limpiamos los flotedos   */
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#global{
+
+    margin: 2rem 3rem;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 0.3rem;
+    padding: 1rem;
+
+    
+}
+
+#titulo{
+    margin: 1rem;
+    font-family: verdana;
+    float: left;
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+}
+
+#menu{
+    margin: 1rem;
+    padding: 0px;
+}
+
+#menu ul{
+    background-color: var(--grisOscuro);
+    display: flex;
+    justify-content: space-evenly;
+}
+#menu ul li{
+    padding: 1rem 1rem; 
+    transition: all 200ms;
+}
+
+#menu ul li a{
+    font-style:  none;
+    text-decoration: none;
+    font-family: Verdana;
+    color: var(--grisClaro);
+    padding: 1rem 0rem;
+}
+
+#contenido{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#gruPosts, #acordeon, #cajaReloj, #formulario{
+    width:  60%;
+    font-family: var(--fuente);  
+    background-color: var(--grisClaro); 
+    margin: 0 0 1rem 0;
+    border-radius: 5px;
+    display: inline-block;
+    
+}
+
+
+.post{
+    padding: 1rem;
+
+    
+}
+
+.post h2{
+    font-size: 1.5rem;
+    font-family: var(--fuente);
+}
+
+.post span{
+    display: inline-block;
+    margin: 0.5rem 0px;
+    padding: 0px 0.5rem;
+    font-family: var(--fuente);
+    font-size: 0.85rem;
+    color: var(--grisOscuro);
+}
+
+.post p{
+    padding: 0px 0.5rem;
+    font-family: var(--fuente);
+    font-size: 0.89rem;
+    text-align: justify;
+}
+.botonLeer{
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--fuente);
+}
+
+.botonLeer:hover{
+    transition: 200ms;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+#asideBar{
+
+    font-family: var(--fuente);
+    text-align: justify;
+    width: 35%;
+    background-color: var(--grisOscuro);
+    border-radius: 5px;
+    padding: 0 0.8rem 0.4rem 0.8rem;
+    float: right;
+    
+
+}
+#asideBar h4{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    color: var(--grisClaro);
+    font-size: 1.5rem;
+}
+
+#asideBar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#asideBar p{
+    font-size: 0.89rem;
+    color: var(--grisClaro);
+}
+
+label{
+    font-family: var(--fuente);
+    color: var(--grisClaro);
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    border-radius: 3px;
+    border: solid 1px #eee;
+    width: 100%;
+    height: 1.2rem;
+    margin: 0.3rem 0 0.3rem 0;
+  
+
+}
+
+form input[type="submit"]{
+   margin-top: 0.5rem;
+    padding: 0.6rem;
+    font-family: var(--fuente);
+    color: var(--grisClaro);
+    background-color: var(--verde);
+    border-radius: 5px;
+    border: solid 0.5px var(--verde);
+    
+}
+
+form input[type="submit"]:hover{
+    box-shadow: 1px 2px 3px var(--grisClaro);
+    cursor: pointer;
+    height: 2.5rem;
+    width: 5rem;
+}
+
+
+
+
+#footer{
+    margin: 0;
+    background-color: var(--grisOscuro);
+    padding: 5% 0;
+    text-align: center;
+    color: var(--grisClaro);
+    font-size: 1.5rem;
+    font-family: var(--fuente);
+    display: flex;
+    justify-content:space-evenly ;
+
+}
+
+
+/* cambiar el alto y ancho del slider */
+.bx-viewport{
+    height: 300px !important;
+    /* width: 100%; */
+   
+}
+
+#temas{
+    position: fixed;
+    top: 40%;
+    width: 36px;
+    height: 6.6rem;
+    background-color: rgb(0, 0, 0, 0.8);
+    margin: 5px;
+
+
+}
+
+.temaSection{
+    border: solid white 1px;
+    width: 25px;
+    height:25px ;
+    margin: 0.4rem auto;
+}
+.temaSection:hover{
+    cursor: pointer;
+}
+
+.temaVerde{
+    background-color: var(--verde);
+}
+
+.temaVerde:hover{
+    width: 30px;
+    height:30px ;
+}
+
+.temaMorado{
+    background-color: var(--morado);
+}
+
+.temaMorado:hover{
+    width: 30px;
+    height:30px ;
+}
+
+.temaByN{
+    background-color: var(--grisClaro);
+}
+
+.temaByN:hover{
+    width: 30px;
+    height:30px ;
+}
+
+
+#subir{
+    border: solid 1px var(--grisOscuro);
+    border-radius: 50%;
+    background-color: var(--grisClaro);
+    width: 5rem;
+    height: 5rem;
+    margin: 0 4px;
+    padding: 5px;
+    display: inline-block;
+    box-shadow: 1px 2px 3px black;
+    
+}
+
+#linkSubir{
+    text-decoration: none;
+    font-family: var(--fuente);
+    margin: 1.5rem auto;
+    color: var(--grisOscuro);
+    display: inline-block;
+}
+
+#linkSubir:hover{
+    color: blue;
+}
+
+
+#subir:hover{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: azure;
+}
+
+
+#acordeon div{
+    margin: 1rem 0 1rem 0  ;
+    border-radius: 20%;
+}
+
+#acordeon h2{
+    border: solid 2px var(--grisClaro);
+    padding: 1rem;
+    background-color: var(--verde);
+}
+
+#cajaReloj{
+    display: block;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#reloj {
+
+    font-size: 30px;
+    font-weight:  bold;
+    font-family: var(--fuente);
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+
+
+}
+
+#formulario{
+    padding: 2rem;
+}
+
+#formulario h3{
+    text-align: center;
+    font-size:  2rem;
+}
+
+#formulario label{
+    color: var(--grisOscuro);
+    display: block;
+    margin-top: 1rem ;
+    font-size: 1.2rem;
+}
+
+#formulario label input{
+    padding: 1.1rem;
+    border: 1px solid var(--grisOscuro);
+    border-radius: 3%;
+}
+
+#contact{
+    width: 70%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+#formulario button{
+
+    width: 5rem;
+    height: 3rem;
+    
+}
+
+

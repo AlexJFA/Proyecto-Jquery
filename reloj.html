@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/css/mainCss.css">
+    <link id="hojaEstilo" rel="stylesheet" href="/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/css/blancoYnegro.css">
+   
+    
+    <!-- jquery desde google. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--   Moment  -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script> 
+
+
+    <!-- JS -->
+    <script src="/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/js/reloj.js"></script>
+
+    <title>Mi pimier proyecto JS-Jquery</title>
+
+
+</head>
+<body>
+
+    <div id="temas">
+        <div class="temaSection temaVerde"></div>
+        <div class="temaSection temaMorado"></div>
+        <div class="temaSection temaByN"></div>
+    </div>
+
+    <section id="global">
+
+        <!--Cabezera -->
+        <header>
+            <div id="titulo">
+                <h1>PRACTICANDO JS.</h1>
+            </div>
+            <div id="titulo">
+                <h4 id="welcome"></h4>
+            </div>
+            <div class="clearFix"></div>
+        </header>
+
+        <!--Menu -->
+        <navbar id="menu">
+            <ul>
+                <li class="secciones"><a href="/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/index.html"> Inicio</a></li>
+                <li class="secciones"><a href="/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/sobremi.html">Sobre Mi</a></li>
+                <li class="secciones"><a href="/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/reloj.html">Reloj</a></li>
+                <li class="secciones"><a href="/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/formulario.html"> Contactos</a></li>
+            </ul>
+        </navbar>
+
+
+
+
+        <!--Contenido-->
+        <section id="contenido">
+            <!-- Reloj dinamico -->
+            <div id="cajaReloj">
+                <h2>La hora es :</h2>
+
+                <div id="reloj"></div>
+                
+            </div>
+
+
+            <aside id="asideBar">
+                <div class="about">
+                    <h4>Quien soy?</h4>
+                    <img src="imagenes/blanco.jpg" alt="">
+                    <p>Pellentesque ac ligula ac tortor placerat iaculis et non orci. Suspendisse porttitor in lorem quis blandit. 
+                        Aliquam erat volutpat. Pellentesque ac sem non erat tempor pulvinar.
+                    </p>
+                </div>
+                <div class="about">
+                    <h4>Quien soy?</h4>
+                    <img src="imagenes/blanco.jpg" alt="">
+                    <p>Pellentesque ac ligula ac tortor placerat iaculis et non orci. Suspendisse porttitor in lorem quis blandit. 
+                        Aliquam erat volutpat. Pellentesque ac sem non erat tempor pulvinar.
+                    </p>
+                </div>
+        
+                <div id="login">
+                    <h4>Identificate</h4>
+                    <form action="">
+                        <label for="name">  Nombre
+                            <input type="text" name="name" id="nameForm">
+                        </label>
+                        <label for="password">  Clave
+                            <input type="password" name="password" id="PassForm">
+                        </label>
+                        <label for="email">  Email
+                            <input type="email" name="email" id="emailForm">
+                        </label>
+                        <input type="submit">
+                    </form>
+                </div>
+
+
+            </aside>
+        </section>
+
+
+
+    </section>
+
+
+
+
+
+
+    <footer id="footer">
+    
+            
+        Mastres JavaScript proyecto Alexander Figueredo. 
+        <div id="subir" class="sube"><a href="" id="linkSubir" class="sube"> subir </a></div>
+    
+
+    </footer>
+</body>
+</html>

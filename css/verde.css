@@ -1,0 +1,44 @@
+
+:root{
+
+    --verde:rgba(17, 111, 27, 0.805);
+    --grisClaro:rgb(239, 234, 234);
+    --grisOscuro:rgb(90, 90, 90);
+    --fuente:verdana;
+
+}
+
+body{
+
+    background-image: url("/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/imagenes/verde.jpg");
+    background-size:cover;
+}
+
+#global{
+    background-image: url("/Proyectos-completos/1-HTML-CSS-JS-JQUERY-JQUERY-UI/imagenes/blanco.jpg"); 
+    background-size:cover;
+}
+
+#titulo{
+   
+    background-color: var(--verde);
+    color: var(--grisClaro);
+}
+
+#menu ul li:hover{
+    background-color: var(--verde);
+    cursor: pointer;
+    
+}
+
+.botonLeer{
+
+    background-color: var(--verde);
+    color: var(--grisClaro);
+ 
+}
+
+.botonLeer:hover{
+    box-shadow: 1px 1px 3px var(--grisOscuro);
+    color: white;
+}
